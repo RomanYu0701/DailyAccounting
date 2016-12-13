@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_label_date" />
+
+    <TextView
+        android:text="20161202"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_value_date" />
+
+    <TextView
+        android:text="Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_label_category" />
+
+    <TextView
+        android:text="category1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_value_category" />
+
+    <TextView
+        android:text="Item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_label_item" />
+
+    <TextView
+        android:text="item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_value_item" />
+
+    <TextView
+        android:text="Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_label_amount" />
+
+    <TextView
+        android:text="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_value_amount" />
+</LinearLayout>

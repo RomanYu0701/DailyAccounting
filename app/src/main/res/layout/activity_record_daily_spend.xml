@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_date" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/field_date" />
+
+    <TextView
+        android:text="Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_category" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/field_category" />
+
+    <TextView
+        android:text="Item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_item" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/field_item" />
+
+    <TextView
+        android:text="Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_amount" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/field_amount" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add_daily_spend"
+        android:onClick="addDailySpend" />
+</LinearLayout>
