@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
         spend.setItem(item);
         spend.setAmount(Integer.valueOf(amount));
 
-        ISpendDao dao = new SpendDaoImpl();
-        dao.save(database,spend);
+        ISpendDao dao = new SpendDaoImpl(database);
+        dao.save(spend);
 
         database.close();
 

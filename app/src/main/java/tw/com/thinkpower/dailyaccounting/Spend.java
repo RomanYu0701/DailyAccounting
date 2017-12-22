@@ -2,6 +2,7 @@ package tw.com.thinkpower.dailyaccounting;
 
 public class Spend {
 
+    public static final String ATT_ID = "ID";
     public static final String ATT_DATE = "DATE";
     public static final String ATT_CATEGORY = "CATEGORY";
     public static final String ATT_ITEM = "ITEM";
@@ -11,10 +12,12 @@ public class Spend {
 
     public static String getCreateSpendStatement(){
         return "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ("
+                + ATT_ID + " INTEGER primary key autoincrement,"
                 + ATT_DATE + " VARCHAR, " + ATT_CATEGORY + " VARCHAR, "
                 + ATT_ITEM + " VARCHAR,"+ATT_AMOUNT+" INT)";
     }
 
+    private int id = 0;
     private String date = null;
     private String category = null;
     private String item = null;

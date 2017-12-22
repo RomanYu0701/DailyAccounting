@@ -23,8 +23,8 @@ public class DailySpendListActivity extends AppCompatActivity {
         DatabaseHelper helper = new DatabaseHelper(getBaseContext());
         SQLiteDatabase database = helper.getReadableDatabase();
 
-        ISpendDao dao = new SpendDaoImpl();
-        List<Spend> spends= dao.findAll(database);
+        ISpendDao dao = new SpendDaoImpl(database);
+        List<Spend> spends= dao.findAll();
 
         spendList.setAdapter(new DailySpendAdapter(spends));
 
