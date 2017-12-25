@@ -20,14 +20,14 @@ public class DailySpendListActivity extends AppCompatActivity {
 
         spendList = (ListView) findViewById(R.id.list_daily_spend);
 
-        DatabaseHelper helper = new DatabaseHelper(getBaseContext());
-        SQLiteDatabase database = helper.getReadableDatabase();
+//        DatabaseHelper helper = new DatabaseHelper(getBaseContext());
+//        SQLiteDatabase database = helper.getReadableDatabase();
 
-        ISpendDao dao = new SpendDaoImpl(database);
+        ISpendDao dao = new SpendDaoImpl(getBaseContext());
         List<Spend> spends= dao.findAll();
 
         spendList.setAdapter(new DailySpendAdapter(spends));
 
-        database.close();
+//        database.close();
     }
 }

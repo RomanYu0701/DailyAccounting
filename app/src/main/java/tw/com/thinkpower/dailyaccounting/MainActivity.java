@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         Log.v("addDailySpend","amount : "+amount);
 
         // save into sqlite database
-        DatabaseHelper helper = new DatabaseHelper(getBaseContext());
-        SQLiteDatabase database = helper.getWritableDatabase();
 
         Spend spend = new Spend();
         spend.setDate(date);
@@ -48,10 +46,8 @@ public class MainActivity extends AppCompatActivity {
         spend.setItem(item);
         spend.setAmount(Integer.valueOf(amount));
 
-        ISpendDao dao = new SpendDaoImpl(database);
+        ISpendDao dao = new SpendDaoImpl(getBaseContext());
         dao.save(spend);
-
-        database.close();
 
         // clear form (EditText)
         field_date.setText(null);
